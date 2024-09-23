@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://localhost/casostestes/casos/ -->
+<html lang="pt"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Cenarios e Casos</title>
+        <link href="./Casos_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="http://localhost/casostestes/">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://localhost/casostestes/casos/">Casos de Teste</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+
+                </div>
+                <div class="col-6">
+
+                
+<table class="table table-sm table-bordered border-primary">
+                        <thead>
+                        <tr>
+                            <th class="table-dark" scope="col" colspan="3">CT-1</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="table-dark">DESCRIÇÃO</td>
+                            <td colspan="2">cadastrar jogador com sucesso</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">ENTRADA</td>
+                            <td colspan="2">nome, numero, telefone, email</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">SAIDA</td>
+                            <td colspan="2">mensagem "usuario criado com sucesso"</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">AMBIENTE</td>
+                            <td colspan="2">--</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">EXIGENCIAS ESPECIAIS</td>
+                            <td colspan="2">--</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">PRE-CONDIÇÕES</td>
+                            <td colspan="2">usuario logado, time criado</td>
+                        </tr>
+                        <tr class="table-dark">
+                            <td>PROCEDIMENTOS</td>
+                            <td>AÇÕES</td>
+                            <td>RESULTADO ESPERADO</td>
+                        </tr><tr>
+                            <td></td>
+                            <td>1 acessa tela de cadastro de jogadores no time</td>
+                            <td>1 exibe tela com formulario para cadastro de jogador</td>
+                        </tr><tr>
+                            <td></td>
+                            <td>2 preenche formulario com dados de entrada e clica botao cadastrar</td>
+                            <td>2 sistema processa e salva jogador com os dados preenchidos</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">PÓS-CONDIÇÕES</td>
+                            <td colspan="2">jogador criado com sucesso</td>
+                        </tr>
+                        </tbody>
+                    </table>                    
+                    
+<table class="table table-sm table-bordered border-primary">
+                        <thead>
+                        <tr>
+                            <th class="table-dark" scope="col" colspan="3">CT-2</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="table-dark">DESCRIÇÃO</td>
+                            <td colspan="2">tentar cadastrar jogador com numero ja cadastrado</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">ENTRADA</td>
+                            <td colspan="2">nome, numero, telefone, email</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">SAIDA</td>
+                            <td colspan="2">mensagem "erro: ja existe jogador com este numero"</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">AMBIENTE</td>
+                            <td colspan="2">--</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">EXIGENCIAS ESPECIAIS</td>
+                            <td colspan="2">--</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">PRE-CONDIÇÕES</td>
+                            <td colspan="2">usuario logado, time criado, jogador com mesmo numero cadastrado</td>
+                        </tr>
+                        <tr class="table-dark">
+                            <td>PROCEDIMENTOS</td>
+                            <td>AÇÕES</td>
+                            <td>RESULTADO ESPERADO</td>
+                        </tr><tr>
+                            <td></td>
+                            <td> 1 acessa tela de cadastro de jogadores no time</td>
+                            <td>1 exibe tela com formulario para cadastro de jogador</td>
+                        </tr><tr>
+                            <td></td>
+                            <td>2 preenche formulario com dados de entrada e clica botao cadastrar</td>
+                            <td>2 sistema retorna mensagem com erro de cadastro por numero em duplicidade, voltando para autofocus no campo para substituicao</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">PÓS-CONDIÇÕES</td>
+                            <td colspan="2">--</td>
+                        </tr>
+                        </tbody>
+                    </table>                    
+                    
+<table class="table table-sm table-bordered border-primary">
+                        <thead>
+                        <tr>
+                            <th class="table-dark" scope="col" colspan="3">CT-3</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="table-dark">DESCRIÇÃO</td>
+                            <td colspan="2">tentar cadastrar com dados incompletos</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">ENTRADA</td>
+                            <td colspan="2">nome, numero</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">SAIDA</td>
+                            <td colspan="2">mensagem "erro: dados obrigatorios nao preenchidos"</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">AMBIENTE</td>
+                            <td colspan="2">--</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">EXIGENCIAS ESPECIAIS</td>
+                            <td colspan="2">--</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">PRE-CONDIÇÕES</td>
+                            <td colspan="2">usuario logado time criado</td>
+                        </tr>
+                        <tr class="table-dark">
+                            <td>PROCEDIMENTOS</td>
+                            <td>AÇÕES</td>
+                            <td>RESULTADO ESPERADO</td>
+                        </tr><tr>
+                            <td></td>
+                            <td>1 acessa tela de cadastro de jogadores no time</td>
+                            <td>1 exibe tela com formulario para cadastro de jogador</td>
+                        </tr><tr>
+                            <td></td>
+                            <td>2 preenche formulario com dados de entrada e clica botao cadastrar</td>
+                            <td>2 sistema retorna mensagem com erro de cadastro por dados obrigatorios incompletos, voltando para autofocus no campo o primeiro campo em branco</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">PÓS-CONDIÇÕES</td>
+                            <td colspan="2">--</td>
+                        </tr>
+                        </tbody>
+                    </table>                    
+                    
+<table class="table table-sm table-bordered border-primary">
+                        <thead>
+                        <tr>
+                            <th class="table-dark" scope="col" colspan="3">CT-4</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="table-dark">DESCRIÇÃO</td>
+                            <td colspan="2">cadastrar jogo com sucesso</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">ENTRADA</td>
+                            <td colspan="2">a data e o horario do jogo, o local, o nome do time adversario, os nomes do juiz e do juiz auxiliar;</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">SAIDA</td>
+                            <td colspan="2">mensagem "jogo cadastrado com sucesso"</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">AMBIENTE</td>
+                            <td colspan="2">--</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">EXIGENCIAS ESPECIAIS</td>
+                            <td colspan="2">--</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">PRE-CONDIÇÕES</td>
+                            <td colspan="2">time cadastrado, time advesario cadastrado, juizes cadastrado</td>
+                        </tr>
+                        <tr class="table-dark">
+                            <td>PROCEDIMENTOS</td>
+                            <td>AÇÕES</td>
+                            <td>RESULTADO ESPERADO</td>
+                        </tr><tr>
+                            <td></td>
+                            <td>acessa tela de cadastro de jogo</td>
+                            <td>exibe tela de cadastro de jogo</td>
+                        </tr><tr>
+                            <td></td>
+                            <td>preenche formulario marcando horario, data, selecionando time adversario, seleciona juizes e clica em criar</td>
+                            <td>cadastra um jogo com sucesso</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">PÓS-CONDIÇÕES</td>
+                            <td colspan="2">jogo cadastrado com sucesso</td>
+                        </tr>
+                        </tbody>
+                    </table>                    
+                    
+<table class="table table-sm table-bordered border-primary">
+                        <thead>
+                        <tr>
+                            <th class="table-dark" scope="col" colspan="3">CT-5</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="table-dark">DESCRIÇÃO</td>
+                            <td colspan="2">erro  ao cadastrar jogo</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">ENTRADA</td>
+                            <td colspan="2">a data e o horario do jogo, o local, os nomes do juiz e do juiz auxiliar;</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">SAIDA</td>
+                            <td colspan="2">mensagem "erro ao cadastrar jogo"</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">AMBIENTE</td>
+                            <td colspan="2">--</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">EXIGENCIAS ESPECIAIS</td>
+                            <td colspan="2">--</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">PRE-CONDIÇÕES</td>
+                            <td colspan="2">time cadastrado, time advesario cadastrado, juizes cadastrado</td>
+                        </tr>
+                        <tr class="table-dark">
+                            <td>PROCEDIMENTOS</td>
+                            <td>AÇÕES</td>
+                            <td>RESULTADO ESPERADO</td>
+                        </tr><tr>
+                            <td></td>
+                            <td>acessa tela de cadastro de jogo</td>
+                            <td>exibe tela de cadastro de jogo</td>
+                        </tr><tr>
+                            <td></td>
+                            <td>preenche formulario marcando horario, data, NAO SELECIONA adversario, seleciona juizes e clica em criar</td>
+                            <td>erro ao cadastrar jogo</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">PÓS-CONDIÇÕES</td>
+                            <td colspan="2">sem atera�oes nos jogos cadastrados</td>
+                        </tr>
+                        </tbody>
+                    </table>                    
+                    
+<table class="table table-sm table-bordered border-primary">
+                        <thead>
+                        <tr>
+                            <th class="table-dark" scope="col" colspan="3">CT-6</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="table-dark">DESCRIÇÃO</td>
+                            <td colspan="2">ponto cadastrado com sucesso</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">ENTRADA</td>
+                            <td colspan="2">jogo, time, jogador, tipo de ponto</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">SAIDA</td>
+                            <td colspan="2">mensagem "ponto cadastrado com sucesso"</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">AMBIENTE</td>
+                            <td colspan="2">--</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">EXIGENCIAS ESPECIAIS</td>
+                            <td colspan="2">--</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">PRE-CONDIÇÕES</td>
+                            <td colspan="2">time cadastrado, time advesario cadastrado, jogo cadastrado, time principal cadastrado, tipos de ponto cadastrado</td>
+                        </tr>
+                        <tr class="table-dark">
+                            <td>PROCEDIMENTOS</td>
+                            <td>AÇÕES</td>
+                            <td>RESULTADO ESPERADO</td>
+                        </tr><tr>
+                            <td></td>
+                            <td>acessa tela de cadastro de ponto</td>
+                            <td>exibe tela de cadastro de ponto</td>
+                        </tr><tr>
+                            <td></td>
+                            <td>preenche formulario: jogo, jogador e tipo do ponto e clica em criar</td>
+                            <td>sucesso ao cadastrar ponto</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">PÓS-CONDIÇÕES</td>
+                            <td colspan="2">ponto cadastrado com sucesso</td>
+                        </tr>
+                        </tbody>
+                    </table>                    
+                    
+<table class="table table-sm table-bordered border-primary">
+                        <thead>
+                        <tr>
+                            <th class="table-dark" scope="col" colspan="3">CT-7</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="table-dark">DESCRIÇÃO</td>
+                            <td colspan="2">erro ao cadastrar ponto</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">ENTRADA</td>
+                            <td colspan="2">jogo, time, jogador</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">SAIDA</td>
+                            <td colspan="2">mensagem "ponto nao cadastrado"</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">AMBIENTE</td>
+                            <td colspan="2">--</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">EXIGENCIAS ESPECIAIS</td>
+                            <td colspan="2">--</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">PRE-CONDIÇÕES</td>
+                            <td colspan="2">time cadastrado, time advesario cadastrado, jogo cadastrado, time principal cadastrado, tipos de ponto cadastrado</td>
+                        </tr>
+                        <tr class="table-dark">
+                            <td>PROCEDIMENTOS</td>
+                            <td>AÇÕES</td>
+                            <td>RESULTADO ESPERADO</td>
+                        </tr><tr>
+                            <td></td>
+                            <td>acessa tela de cadastro de ponto</td>
+                            <td>exibe tela de cadastro de ponto</td>
+                        </tr><tr>
+                            <td></td>
+                            <td>preenche formulario: jogo, jogador mas nao seleciona o tipo do ponto e clica em criar</td>
+                            <td>erro ao cadastrar ponto</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">PÓS-CONDIÇÕES</td>
+                            <td colspan="2">erro ao cadastrar ponto</td>
+                        </tr>
+                        </tbody>
+                    </table>                    
+                    
+<table class="table table-sm table-bordered border-primary">
+                        <thead>
+                        <tr>
+                            <th class="table-dark" scope="col" colspan="3">CT-8</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="table-dark">DESCRIÇÃO</td>
+                            <td colspan="2">erro ao cadastrar ponto</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">ENTRADA</td>
+                            <td colspan="2">time, jogador, tipo de ponto</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">SAIDA</td>
+                            <td colspan="2">mensagem "ponto nao cadastrado"</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">AMBIENTE</td>
+                            <td colspan="2">--</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">EXIGENCIAS ESPECIAIS</td>
+                            <td colspan="2">--</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">PRE-CONDIÇÕES</td>
+                            <td colspan="2">time cadastrado, time advesario cadastrado, jogo cadastrado, time principal cadastrado, tipos de ponto cadastrado</td>
+                        </tr>
+                        <tr class="table-dark">
+                            <td>PROCEDIMENTOS</td>
+                            <td>AÇÕES</td>
+                            <td>RESULTADO ESPERADO</td>
+                        </tr><tr>
+                            <td></td>
+                            <td>acessa tela de cadastro de ponto</td>
+                            <td>exibe tela de cadastro de ponto</td>
+                        </tr><tr>
+                            <td></td>
+                            <td>preenche formulario: jogador, tipo do ponto 
+ mas nao seleciona o jogo e clica em criar</td>
+                            <td>erro ao cadastrar ponto</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">PÓS-CONDIÇÕES</td>
+                            <td colspan="2">erro ao cadastrar ponto</td>
+                        </tr>
+                        </tbody>
+                    </table>                    
+                    
+<table class="table table-sm table-bordered border-primary">
+                        <thead>
+                        <tr>
+                            <th class="table-dark" scope="col" colspan="3">CT-9</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="table-dark">DESCRIÇÃO</td>
+                            <td colspan="2">relatorio gerado com sucesso</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">ENTRADA</td>
+                            <td colspan="2">jogo, jogador</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">SAIDA</td>
+                            <td colspan="2">mensagem "relatorio gerado por jogador"</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">AMBIENTE</td>
+                            <td colspan="2">--</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">EXIGENCIAS ESPECIAIS</td>
+                            <td colspan="2">--</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">PRE-CONDIÇÕES</td>
+                            <td colspan="2">time cadastrado, time advesario cadastrado, jogo cadastrado, time principal cadastrado, tipos de ponto cadastrado</td>
+                        </tr>
+                        <tr class="table-dark">
+                            <td>PROCEDIMENTOS</td>
+                            <td>AÇÕES</td>
+                            <td>RESULTADO ESPERADO</td>
+                        </tr><tr>
+                            <td></td>
+                            <td>acessa tela de gerar relatorio</td>
+                            <td>exibe tela de gerar relatorio</td>
+                        </tr><tr>
+                            <td></td>
+                            <td>seleciona o jogador que deseja o relatorio e clica em gerar</td>
+                            <td>gera relatorio por jogador</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">PÓS-CONDIÇÕES</td>
+                            <td colspan="2">relatorio gerado com sucesso</td>
+                        </tr>
+                        </tbody>
+                    </table>                    
+                    
+<table class="table table-sm table-bordered border-primary">
+                        <thead>
+                        <tr>
+                            <th class="table-dark" scope="col" colspan="3">CT-10</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="table-dark">DESCRIÇÃO</td>
+                            <td colspan="2">relatorio por treinador gerado com sucesso</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">ENTRADA</td>
+                            <td colspan="2">jogo, treinador</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">SAIDA</td>
+                            <td colspan="2">mensagem "relatorio gerado por treinador"</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">AMBIENTE</td>
+                            <td colspan="2">--</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">EXIGENCIAS ESPECIAIS</td>
+                            <td colspan="2">--</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">PRE-CONDIÇÕES</td>
+                            <td colspan="2">time cadastrado, time advesario cadastrado, jogo cadastrado, time principal cadastrado, tipos de ponto cadastrado</td>
+                        </tr>
+                        <tr class="table-dark">
+                            <td>PROCEDIMENTOS</td>
+                            <td>AÇÕES</td>
+                            <td>RESULTADO ESPERADO</td>
+                        </tr><tr>
+                            <td></td>
+                            <td>acessa tela de gerar relatorio</td>
+                            <td>exibe tela de gerar relatorio</td>
+                        </tr><tr>
+                            <td></td>
+                            <td>seleciona o treinador que deseja o relatorio e clica em gerar</td>
+                            <td>gera relatorio por treinador</td>
+                        </tr>
+                        <tr>
+                            <td class="table-dark">PÓS-CONDIÇÕES</td>
+                            <td colspan="2">relatorio gerado com sucesso</td>
+                        </tr>
+                        </tbody>
+                    </table>                    
+                    
+                </div>
+                <div class="col">
+
+                </div>
+            </div>
+        </div>
+        <script src="./Casos_files/bootstrap.bundle.min.js.download" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+
+</body></html>
